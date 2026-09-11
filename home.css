@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Rubik+Moonrocks&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; /* Changed font family */
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://www.shutterstock.com/image-photo/consumer-feedback-concept-customer-satisfaction-600nw-2103127895.jpg); /* Removed gradient overlay */
+ 
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  padding-right: 5%;
+  padding-left: 3%;
+}
+
+.navbar {
+  color: black; /* Changed color to black */
+  width: 100%;
+  height: 15vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Added to space out navbar items */
+}
+.logo-container { 
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 10px; /* Adjust spacing as needed */
+}
+.back-icon {
+  font-size: 24px;
+  color: black; /* Changed color to black */
+  cursor: pointer;
+  margin-right: 20px; /* Adjusted margin for better alignment */
+}
+h3 {
+  color: black; /* Changed color to black */
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: 5px;
+}
+
+  
+nav.center-nav { /* Added class for centering */
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Center the navigation links */
+}
+nav ul {
+  display: flex; /* Changed to flex for better control */
+  gap: 20px; /* Added gap for spacing between links */
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black; /* Changed color to black */
+  font-size: 15px;
+  font-weight: 500;
+}
+nav ul li a:hover {
+  color: rgb(251, 250, 250); /* Changed color to black */
+}
+.menu-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Added gap for spac
+  ing between buttons and menu icon */
+}
+.btnl {
+  background: antiquewhite;
+  background-size: 100% auto;
+  text-align: center;
+  color: black; /* Changed color to black */
+  padding: 8px 25px;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 15px;
+  box-shadow: 3px 8px 22px rgba(22, 21, 21.15);
+  transition: background-position 0.5s;
+}
+.menu-icon {
+  font-size: 24px;
+  color: black; /* Changed color to black */
+  cursor: pointer;
+}
+.dropdown-menu {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 60px; /* Adjust based on your layout */
+  right: 20px; /* Adjust based on your layout */
+  background-color: #333;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-menu ul {
+  list-style: none;
+  padding: 10px;
+}
+.dropdown-menu ul li {
+  padding: 8px 12px;
+}
+.dropdown-menu ul li a {
+  color: black; /* Changed color to black */
+  text-decoration: none;
+  display: block;
+}
+.dropdown-menu ul li a:hover {
+  background-color: #575757;
+}
+.content {
+  margin-top: 150px;
+  position: relative;
+  text-align: left;
+  color: black; /* Changed text color to black */
+}
+
+.dynamic-text {
+    font-size: 36px;
+    font-weight: 700;
+    color: black; /* Changed text color to black */
+    animation: colorChange 5s infinite; /* Dynamic animation */
+  }
+  
+.dynamic-subtext {
+  font-size: 18px;
+  font-weight: 400;
+  color: black; /* Changed text color to black */
+  animation: colorChange 5s infinite;
+  
+}
+@keyframes colorChange {
+  0% { color: rgb(251, 249, 249); }
+  50% { color: rgb(205, 188, 188); }
+  100% { color: black; }
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlide 2s ease-out forwards;
+  }
+  
+  @keyframes fadeSlide {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+h1 {
+  font-size: 130px;
+  font-weight: 700;
+  line-height: 0.9em;
+}
+span.txt {
+  color: #151514;
+  font-size: 100px;
+}
+.btn2 {
+  background-color: white;
+  color: white; /* White font */
+  margin-top: 50px;
+  margin-left: 10px;
+  padding: 15px 45px;
+  outline: none;
+  border: 2px solid #62bbde;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 3px 8px 22px rgba(22, 21, 21, 0.15);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn2:hover {
+  background-color: black;
+  color: white;
+}
+
+.footer {
+  background-color: #121213;
+  color: rgb(255, 248, 248); /* Changed color to black */
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+.footer-section h4 {
+  margin-bottom: 15px;
+  color: rgb(246, 242, 242); /* Changed color to black */
+}
+.footer-section p, .footer-section a {
+  color: rgb(250, 248, 248); /* Changed color to black */
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: block;
+}
+.footer-section a:hover {
+  text-decoration: underline;
+}
+.social-media {
+  margin-top: 20px;
+}
+.social-media a {
+  color: rgb(245, 239, 239); /* Changed color to black */
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+}
+.social-media a:hover {
+  color: #cb45d7;
+}
